@@ -16,6 +16,7 @@ public class CarDetailsPage extends Helper {
 
     private final By textCarDetailsTitle = By.xpath("//android.widget.TextView[@text='Araç Detayları']");
     private final By buttonBasket = By.id("vehicleSummarySwitch");
+    private final By txtpriceTitle = By.xpath("//android.widget.TextView[@resource-id='com.edreams.travel:id/priceTitle']");
 
     public void carDetailsPageTitle() {
         System.out.println("Car details page title");
@@ -25,7 +26,8 @@ public class CarDetailsPage extends Helper {
 
     public void clickBasketButtonOnCarDetailsPage() {
         System.out.println("Click basket button on car details page");
+        Assert.assertEquals(driver.findElement(txtpriceTitle).getText(), ScenarioDataStore.get("Price of the first car"));
         driver.findElement(buttonBasket).click();
-        ScenarioDataStore.get("Price of the first car");
+
     }
 }
