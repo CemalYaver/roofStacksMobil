@@ -2,11 +2,10 @@ package pageSteps;
 
 import com.thoughtworks.gauge.Step;
 import pages.PrivacyPage;
-import utils.driver.Driver;
 
 public class PrivacyPageSteps {
 
-    PrivacyPage privacyPage = new PrivacyPage(Driver.driver);
+    PrivacyPage privacyPage = new PrivacyPage();
 
     @Step("Click privacy options and accept")
     public void clickPrivacyOptionsAndAccept() {

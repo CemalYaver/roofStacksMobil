@@ -12,7 +12,7 @@ Verify that the total Price in the basket is equal to the price of the car selec
 *Click sign in with google
 *Click category menu:"Araç Kiralama"
 *Search on the car rental page:"Istanbul - Sabiha Gokcen Airport"
-*Click chooses any pick-up and return date on the car rental page delivery date:"01032022" date of return:"05032022"
+*Click chooses any pick-up and return date on the car rental page delivery date:"14032022" date of return:"18032022"
 *Click the search car button on search page
 *Check search result page
 *Click filter page button

@@ -2,11 +2,10 @@ package pageSteps;
 
 import com.thoughtworks.gauge.Step;
 import pages.FilterPage;
-import utils.driver.Driver;
 
 public class FilterPageSteps {
 
-    FilterPage filterPage = new FilterPage(Driver.driver);
+    FilterPage filterPage = new FilterPage();
 
     @Step("Check filter page title")
     public void checkFilterPageTitle() {

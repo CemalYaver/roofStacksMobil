@@ -2,11 +2,10 @@ package pageSteps;
 
 import com.thoughtworks.gauge.Step;
 import pages.RentCarPage;
-import utils.driver.Driver;
 
 public class RentCarSteps {
 
-    RentCarPage rentCarPage = new RentCarPage(Driver.driver);
+    RentCarPage rentCarPage = new RentCarPage();
 
     @Step("Search on the car rental page:<search>")
     public void searchOnTheCarRentalPage(String search) {

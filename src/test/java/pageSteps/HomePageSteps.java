@@ -2,11 +2,10 @@ package pageSteps;
 
 import com.thoughtworks.gauge.Step;
 import pages.HomePage;
-import utils.driver.Driver;
 
 public class HomePageSteps {
 
-    HomePage homePage = new HomePage(Driver.driver);
+    HomePage homePage = new HomePage();
 
     @Step("Click category menu:<category>")
     public void clickCategoryMenu(String category) {

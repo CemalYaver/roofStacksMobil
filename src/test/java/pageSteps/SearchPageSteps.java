@@ -2,11 +2,10 @@ package pageSteps;
 
 import com.thoughtworks.gauge.Step;
 import pages.SearchPage;
-import utils.driver.Driver;
 
 public class SearchPageSteps {
 
-    SearchPage searchPage = new SearchPage(Driver.driver);
+    SearchPage searchPage = new SearchPage();
 
     @Step("Click chooses any pick-up and return date on the car rental page delivery date:<deliveryDate> date of return:<dateOfReturn>")
     public void clickChoosesDeliveryDateAndReturnDate(String deliveryDate, String dateOfReturn) {
